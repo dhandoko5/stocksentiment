@@ -1,5 +1,5 @@
 getHeadings <- function(websource) {
-  sapply(1:nrow(meta(websource)), function(x) {
-    return(meta(websource[[x]])$heading)
+  sapply(1:nrow(tm::meta(websource)), function(x) {
+    return(tm::meta(websource[[x]])$heading)
   })
 }
