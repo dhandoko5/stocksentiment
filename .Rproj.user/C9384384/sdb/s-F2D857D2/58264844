@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "getDesc <- function(websource) {\n  sapply(1:nrow(meta(websource)), function(x) {\n    return(meta(websource[[x]])$description)\n  })\n}\n",
+    "created" : 1469052283818.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3367009179",
+    "id" : "58264844",
+    "lastKnownWriteTime" : 1469051901,
+    "last_content_update" : 1469051901,
+    "path" : "/media/sf_Shared_Folder/stocksentiment/R/getDesc.R",
+    "project_path" : "R/getDesc.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
