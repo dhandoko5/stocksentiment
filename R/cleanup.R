@@ -4,7 +4,7 @@ cleanup <- function(text) {
   text = gsub("[^[:space:]]*…$", "", text)
   text = tm::stripWhitespace(text)
   text = tolower(text)
-  text = tm::removeWords(text, words= stopwords("english"))
+  text = tm::removeWords(text, words= tm::stopwords("english"))
   text = tm::removePunctuation(text)
   text = tm::removeNumbers(text)
   return(text)
