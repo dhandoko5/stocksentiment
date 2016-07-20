@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "getHeadings <- function(websource) {\n  sapply(1:nrow(meta(websource)), function(x) {\n    return(meta(websource[[x]])$heading)\n  })\n}\n",
+    "created" : 1469052405332.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3191520682",
+    "id" : "B81693D3",
+    "lastKnownWriteTime" : 1469051901,
+    "last_content_update" : 1469051901,
+    "path" : "/media/sf_Shared_Folder/stocksentiment/R/getHeadings.R",
+    "project_path" : "R/getHeadings.R",
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

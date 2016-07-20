@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "cleanup <- function(text) {\n  text= gsub(\"[^[:print:]]\", \"\", text)\n  text = gsub(\"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\\\(\\\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+\", \"\", text)\n  text = gsub(\"[^[:space:]]*…$\", \"\", text)\n  text = tm::stripWhitespace(text)\n  text = tolower(text)\n  text = tm::removeWords(text, words= stopwords(\"english\"))\n  text = tm::removePunctuation(text)\n  text = tm::removeNumbers(text)\n  return(text)\n}\n\n",
+    "created" : 1469052042225.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "143449572",
+    "id" : "C53994F6",
+    "lastKnownWriteTime" : 1469053286,
+    "last_content_update" : 1469052160774,
+    "path" : "/media/sf_Shared_Folder/stocksentiment/R/cleanup.R",
+    "project_path" : "R/cleanup.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
